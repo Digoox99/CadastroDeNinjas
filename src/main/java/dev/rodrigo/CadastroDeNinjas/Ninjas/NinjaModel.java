@@ -1,5 +1,7 @@
-package dev.rodrigo.CadastroDeNinjas;
+package dev.rodrigo.CadastroDeNinjas.Ninjas;
+import dev.rodrigo.CadastroDeNinjas.Missoes.MissoesModel;
 import jakarta.persistence.*;
+import java.util.List;
 
 //transformando classe em Entidade
 @Entity
@@ -11,6 +13,8 @@ public class NinjaModel {
     private String nome;
     private String email;
     private int idade;
+    private List<MissoesModel> missoes;
+
 
     public NinjaModel(){
 
