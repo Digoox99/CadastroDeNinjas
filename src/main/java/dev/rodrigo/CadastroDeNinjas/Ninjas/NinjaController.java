@@ -14,23 +14,25 @@ public class NinjaController {
 
     //fazer CRUD
 
+    //Rota para criar um Ninja
     @PostMapping("/criar")
     public String criarNinja(){
             return "Ninja criado";
     }
 
-
+    //Mostra os Ninjas por ID
     @GetMapping("/todosID")
     public String todosID(){
         return "Mostra ninja por id";
     }
 
-    //altera
+    //Altera o ID do ninja
     @PutMapping("/alterarID")
     public String alterarNinjaPorID(){
         return "Alterar ninja por id";
     }
 
+    //Deletar Ninja
     @DeleteMapping("/deleteID")
     public String deletarPorID(){
             return "Ninja deletado por ID";
