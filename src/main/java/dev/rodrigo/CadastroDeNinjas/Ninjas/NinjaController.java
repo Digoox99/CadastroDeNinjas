@@ -45,9 +45,9 @@ public class NinjaController {
     }
 
     //Deletar Ninja
-    @DeleteMapping("/deleteID")
-    public String deletarPorID(){
-            return "Ninja deletado por ID";
+    @DeleteMapping("/deletar/{id}")
+    public void deletarPorID(@PathVariable Long id){
+        ninjaService.deletarNinjaPorID(id);
     }
 
 
